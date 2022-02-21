@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>M&B Großhandel</title>
+</head>
+
+
+
+<body>
+ 
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+               <a href="index.html"><img class="logo__img" src="images/logo.svg" width="125 px" alt="Logo"></a>
+            </div>
+            
+        <nav>   
+            <ul class=navbar__ulnavlinks>
+                <li><a class="navbar__navlinks" href="index.html">Startseite</a></li>
+                <li><a class="navbar__navlinks" href="sortiment.html">Sortiment</a></li>
+                <li><a class="navbar__navlinks" href="ueberuns.html">Über uns</a></li>
+                <li><a class="navbar__navlinks" href="kontakt.html">Kontakt</a></li>  
+                <li><button class="navbar__theme-button" onclick="changeTheme()">&#9788;</button></li>
+            </ul>
+        </nav>
+
+
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+
+
+
+
+        <div class="shoppingcart">
+
+            <h1>Einkaufswagen: </h1>
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="myscripts.js"></script> 
+    <script>
+        
+        //Search function
+        //store input
+        $('#products__search__id').on('keyup', function(){
+           var value = $(this).val()
+          
+           var dataTable = searchTable(value, productsData)
+           loadTableData(dataTable)
+        })
+        
+        
+        //filter input
+        function searchTable(value, oldTable){
+           var filteredData = []
+           
+           for (var i = 0; i < oldTable.length; i++){
+              
+              value = value.toLowerCase()
+              var productname = oldTable[i].Produkt.toLowerCase()
+        
+              if(productname.includes(value)){
+                 filteredData.push(oldTable[i])
+              }
+           }
+        
+           return filteredData
+        }
+        </script>
+    
+</body>
+</html>
+
