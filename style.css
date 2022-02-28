@@ -261,12 +261,6 @@ nav ul li{
     margin-top: 50px;
 }
 
-.shoppingcart__costtable ion-icon{
-    font-size: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer;
-}
 
 .shoppingcart__costtable-header{
     padding-top: 50px;
@@ -303,6 +297,36 @@ nav ul li{
     border-bottom: 1px solid var(--primary-color);
 }
 
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.shoppingcart__costtable-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cartTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.cartTotalTitel{
+    width: 30%;
+}
+
+.cartTotal{
+    width: 10%;
+}
 
 
 
