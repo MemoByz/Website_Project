@@ -25,9 +25,6 @@ burgerMenu();
 
 
 
-
-
-
 //List Products
 let productsData = [
 
@@ -194,9 +191,7 @@ function displayCart(){
             <h4 class="cartTotal">${cartCost} €</h4>
          </div>`
    }
-
 }
-
 
 displayCart();
 
