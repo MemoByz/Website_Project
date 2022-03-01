@@ -49,7 +49,7 @@ function loadTableData(productsData){
 
    for(let i of productsData){
       dataHtml += `<tr><td>${i.Produkt}</td><td>${i.Preis} €</td><td>${i.Anzahl}</td><td><a onclick="cartNumbers(productsData[${counter}]); 
-      totalCost(productsData[${counter}]);" class="add-cart" href="#">in den Warenkorb</a></td></tr>`;
+      totalCost(productsData[${counter}]);" class="add-cart" href="#">hinzufügen</a></td></tr>`;
       counter++;
    }
 
@@ -82,7 +82,6 @@ function sortColumn(columnName){
 
 function cartNumbers(product){
    let productNumbers =sessionStorage.getItem('cartNumbers');
-
    productNumbers = parseInt(productNumbers);
    
    if(productNumbers){
@@ -167,6 +166,7 @@ function totalCost(product){
 function displayCart(){
    let cartItems = sessionStorage.getItem("productsInCart");
    cartItems = JSON.parse(cartItems);
+   
    let productContainer = document.querySelector(".shoppingcart__costtable-list");
    let cartCost = sessionStorage.getItem('totalCost');
    cartCost = Math.round(cartCost*100)/100;
