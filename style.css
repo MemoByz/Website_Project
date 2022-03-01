@@ -247,6 +247,23 @@ nav ul li{
 }
 
 
+.toShoppingCart{
+    padding-top: 30px;
+}
+
+.toShoppingCartButton:hover{
+    background-color: var(--link-hovers);
+    color:var(--secondary-color);
+}
+
+.toShoppingCartButton{
+    text-decoration: none;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+    padding: 8px 8px;
+    border-radius: 10%;
+}
+
 
 /*Einkaufswagen*/
 
@@ -386,6 +403,7 @@ nav{
 
 nav ul li{
     width: 100%;
+    padding-bottom: 8px;
 }
 
 .navbar__theme-button{
@@ -404,7 +422,6 @@ nav ul li{
     margin-left: auto;
     visibility: visible;
 }
-
 
 
 .navbar__ulnavlinks{
@@ -495,14 +512,81 @@ nav ul li{
 
 
 /*Sortimente*/
+
+
 .products{
     display: flex;
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+
+
+.products h1{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+
+
+.products table{
+    font-family: 'Poppins', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+
+.products__search{
+    width:100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;   
+}
+
+
+.products table{
+    font-family: 'Poppins', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.products tr{
+    text-align: center;
+}
+
+.products td{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.products th{
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.toShoppingCart{
+    padding-top: 25px;
+    width:100%;
+}
+
+
+.toShoppingCartButton{
+    text-decoration: none;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+    padding: 8px 8px;
+    border-radius: 10%;
+}
+
 
 
 /*Über uns*/
@@ -514,6 +598,99 @@ nav ul li{
     justify-content: space-around;
     padding-top: 30px;
 }
+
+
+
+
+
+
+/*Einkaufswagen*/
+
+
+.shoppingcart__costtable{
+    max-width: 700px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.shoppingcart__costtable-header{
+    padding-top: 50px;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid var(--primary-color);
+    margin: 0 auto;
+    padding-right: 20px;
+}
+
+.product-name{
+    width: 35%;
+}
+
+.product-price{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.product-quantity{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.product-total{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+    border-bottom-right-radius: 10%;
+}
+
+.product{
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--primary-color);
+    border-bottom-left-radius: 10%;
+
+}
+
+.shoppingcart__costtable-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cartTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.cartTotalTitel{
+    width: 60%;
+}
+
+.cartTotal{
+    width: 20%;
+}
+
+
+
+
+
+
+
 
 
 
